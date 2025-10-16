@@ -215,10 +215,26 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+/* === Diperbarui agar semua isi card sensor rata tengah === */
+.sensor-card {
+  flex-direction: column;         /* ikon di atas teks */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px 15px;
+}
+
 .sensor-card i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f5a623;
-  margin-right: 20px;
+  margin-bottom: 10px;            /* jarak antara ikon dan teks */
+}
+
+.sensor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sensor-info p {
@@ -230,8 +246,10 @@ h1, h2, h3, h4, h5, h6 {
 .sensor-info span {
   font-size: 1.2rem;
   font-weight: 700;
+  margin-top: 5px;
 }
 
+/* Kontrol Manual tetap seperti semula */
 .manual-control-card {
   flex-direction: column;
   align-items: flex-start;
